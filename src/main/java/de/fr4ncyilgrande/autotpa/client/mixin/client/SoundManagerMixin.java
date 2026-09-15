@@ -5,7 +5,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.resources.sounds.SoundInstance;
 import net.minecraft.client.sound.SoundManager;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongepowered.asm.mixin.Mixin;
@@ -27,7 +27,7 @@ public abstract class SoundManagerMixin {
                                CallbackInfoReturnable<SoundManager.Sound> cir) {
         if (sound == null) return;
 
-        ResourceLocation id = sound.getLocation();
+        Identifier id = sound.getLocation();
         if (id == null) return;
 
         String soundId = id.toString();
