@@ -6,7 +6,7 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.KeyMapping;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.lwjgl.glfw.GLFW;
 
 @Environment(EnvType.CLIENT)
@@ -17,7 +17,7 @@ public final class ModKeyBindings {
                     InputConstants.Type.KEYSYM,
                     GLFW.GLFW_KEY_RIGHT_SHIFT,
                     KeyMapping.Category.register(
-                            ResourceLocation.fromNamespaceAndPath("autotpa", "main"))
+                            Identifier.fromNamespaceAndPath("autotpa", "main"))
             )
     );
 
@@ -26,7 +26,7 @@ public final class ModKeyBindings {
     public static void register(Runnable onOpenMenuPressed) {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (OPEN_MENU.consumeClick()) {
-                if (client.screen == null) {
+                if (client.gui.screen() == null) {
                     onOpenMenuPressed.run();
                 }
             }
