@@ -1,0 +1,15 @@
+{
+  "key.autotpa.open_menu": "Apri AutoTPA",
+  "key.categories.autotpa.main": "AutoTPA",
+
+  "autotpa.gui.title": "AutoTPA",
+  "autotpa.gui.search_hint": "Inserisci un nome per cercare, aggiungere o bloccare...",
+  "autotpa.gui.username_field": "Nome giocatore",
+  "autotpa.gui.add_auto": "Accetta automaticamente",
+  "autotpa.gui.block": "Blocca",
+  "autotpa.gui.remove": "Rimuovi",
+  "autotpa.gui.unblock": "Sblocca",
+  "autotpa.gui.auto_header": "Accettazione automatica",
+  "autotpa.gui.blocked_header": "Giocatori bloccati",
+  "autotpa.gui.none": "(nessuno)"
+}

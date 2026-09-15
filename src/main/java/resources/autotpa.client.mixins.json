@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.fr4ncyilgrande.autotpa.mixin.client",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "SoundManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
