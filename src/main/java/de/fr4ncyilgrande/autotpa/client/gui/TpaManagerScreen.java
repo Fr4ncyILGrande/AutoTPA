@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Locale;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.screens.Screen;
@@ -124,7 +124,7 @@ public final class TpaManagerScreen extends Screen {
     }
 
     @Override
-    public void renderBackground(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
+    public void renderBackground(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float delta) {
         // Intenzionalmente vuoto: lo sfondo è disegnato in render().
     }
 
@@ -224,7 +224,7 @@ public final class TpaManagerScreen extends Screen {
     }
 
     @Override
-    public void render(GuiGraphics graphics, int mouseX, int mouseY, float deltaTicks) {
+    public void render(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float deltaTicks) {
         graphics.fill(0, 0, this.width, this.height, COLOR_BACKDROP);
         graphics.fill(this.panelX, this.panelY,
                 this.panelX + this.panelWidth, this.panelY + this.panelHeight, COLOR_PANEL);
@@ -263,7 +263,7 @@ public final class TpaManagerScreen extends Screen {
         super.render(graphics, mouseX, mouseY, deltaTicks);
     }
 
-    private void renderList(GuiGraphics graphics, int columnX, int listTop,
+    private void renderList(GuiGraphicsExtractor graphics, int columnX, int listTop,
                             List<String> names, int scroll) {
         int end = Math.min(names.size(), scroll + this.visibleRows);
         for (int i = scroll; i < end; i++) {
@@ -285,7 +285,7 @@ public final class TpaManagerScreen extends Screen {
         }
     }
 
-    private static void drawRectBorder(GuiGraphics graphics, int x, int y,
+    private static void drawRectBorder(GuiGraphicsExtractor graphics, int x, int y,
                                        int width, int height, int color) {
         graphics.fill(x, y, x + width, y + 1, color);
         graphics.fill(x, y + height - 1, x + width, y + height, color);
