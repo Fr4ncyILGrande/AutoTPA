@@ -22,7 +22,7 @@ public class AutoTpaClient implements ClientModInitializer {
         TpaEventHandler.init(config);
 
         ModKeyBindings.register(() ->
-                Minecraft.getInstance().setScreen(new TpaManagerScreen(config))
+                Minecraft.getInstance().gui.setScreen(new TpaManagerScreen(config))
         );
 
         if (config.debugMode) {
