@@ -1,0 +1,17 @@
+{
+  "key.autotpa.open_menu": "Open AutoTPA",
+  "key.category.autotpa.main": "AutoTPA",
+
+  "autotpa.gui.title": "AutoTPA",
+  "autotpa.gui.accept_all.enabled": "Accept all /tpa requests: ON",
+  "autotpa.gui.accept_all.disabled": "Accept all /tpa requests: OFF",
+  "autotpa.gui.search_hint": "Type a username to search, add or block...",
+  "autotpa.gui.username_field": "Username",
+  "autotpa.gui.add_auto": "Accept automatically",
+  "autotpa.gui.block": "Block",
+  "autotpa.gui.remove": "Remove",
+  "autotpa.gui.unblock": "Unblock",
+  "autotpa.gui.auto_header": "Automatic acceptance",
+  "autotpa.gui.blocked_header": "Blocked players",
+  "autotpa.gui.none": "(none)"
+}
