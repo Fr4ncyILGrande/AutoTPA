@@ -1,3 +1,5 @@
+![Descrizione dell'immagine](https://cdn.modrinth.com/data/iaq2bTU4/images/e997f245ac8cb26f3e5613954ab9e62a951b42d5.png)
+
 # AutoTPA
 
 AutoTPA makes teleport requests simpler, faster, and safer.
@@ -17,3 +19,12 @@ Main features:
 - Safe and customizable configuration
 - Italian and English interface
 - Client-side only: no server-side mod required
+
+<p align="center">
+  <a href="https://discord.com/invite/BKKedpffqn" target="_blank">
+    <img src="https://i.ibb.co/8Dh71sx0/Discord-logo.png" alt="Discord" width="300">
+  </a>
+</p>
+<p align="center">
+  <em>Join the Discord if you have any questions or need support!</em>
+</p>
