@@ -17,5 +17,3 @@ Main features:
 - Safe and customizable configuration
 - Italian and English interface
 - Client-side only: no server-side mod required
-
-Compatible with Minecraft 26.2, Fabric, and Java 25.
